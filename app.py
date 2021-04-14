@@ -11,7 +11,7 @@ import requests
 #from geopy.geocoders import Nominatim
 #from geopy.extra.rate_limiter import RateLimiter
 
-st.set_page_config(page_title="Solar PV Audit",page_icon="🧊",layout="wide",initial_sidebar_state="auto",)
+st.set_page_config(page_title="Solar PV Audit",page_icon="🧊",layout="wide",initial_sidebar_state="collapsed",)
 
 
 st.write("""
@@ -22,6 +22,9 @@ st.write("""
     > ☝Before moving on with this notebook you might want to take a look at:
     > - 📗[Robotic process automation](https://en.wikipedia.org/wiki/Robotic_process_automation)
     > - ⚙️[Computational Engineering](https://en.wikipedia.org/wiki/Computational_engineering)
+    
+    
+    TODO PV ANALYSIS USE 2 Calculation, ignore 1
     """)
 
 
