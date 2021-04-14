@@ -90,7 +90,7 @@ def app():
 
     st.header("1.Project & Location")
     st.write("""
-    Enter project dates and address and verify it is durng the program windo and located in Alberta 
+    Enter project dates and address and verify it is durng the program window and is located in Alberta 
 
     """)
 
