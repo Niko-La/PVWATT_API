@@ -7,9 +7,9 @@ from datetime import datetime, date, time
 import json
 import requests
 
-import geopy
-from geopy.geocoders import Nominatim
-from geopy.extra.rate_limiter import RateLimiter
+#import geopy
+#from geopy.geocoders import Nominatim
+#from geopy.extra.rate_limiter import RateLimiter
 
 st.set_page_config(page_title="Solar PV Audit",page_icon="🧊",layout="wide",initial_sidebar_state="auto",)
 
@@ -53,9 +53,9 @@ def app():
     province = st.sidebar.text_input("Province", "Alberta")
     country = st.sidebar.text_input("Country", "Canada")
 
-    geolocator = Nominatim(user_agent="GTA Lookup")
-    geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
-    location = geolocator.geocode(street+", "+city+", "+province+", "+country)
+    #geolocator = Nominatim(user_agent="GTA Lookup")
+    #geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
+    #location = geolocator.geocode(street+", "+city+", "+province+", "+country)
 
     lat_project = 44
     lon_project = 120
