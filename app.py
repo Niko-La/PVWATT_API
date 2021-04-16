@@ -15,16 +15,9 @@ st.set_page_config(page_title="Solar PV Audit",page_icon="🧊",layout="wide",in
 
 
 st.write("""
-    # PV SOLAR AUDIT PROGAM
-    a tool for efficient deployment & verification of ON-SITE ENERGY installation
-
-    > **Demo Project:** 
-    > ☝Before moving on with this notebook you might want to take a look at:
+    # PV WATT IT DO BABY
     > - 📗[Robotic process automation](https://en.wikipedia.org/wiki/Robotic_process_automation)
     > - ⚙️[Computational Engineering](https://en.wikipedia.org/wiki/Computational_engineering)
-    
-    
-    TODO PV ANALYSIS USE 2 Calculation, ignore 1
     """)
 
 
@@ -88,28 +81,26 @@ def app():
     st.write(dt_string)
 
 
-    st.header("1.Project & Location")
-    st.write("""
-    Enter project dates and address and verify it is durng the program window and is located in Alberta 
-
-    """)
+    #st.header("1.Project & Location")
+    #st.write(""" DEMO """)
+    # Enter project dates and address and verify it is durng the program window and is located in Alberta 
 
     #address = st.sidebar.text_input("Project location", "2390 47 Ave SW, Calgary, AB T2T 5W5")
 
-    d1,d2,d3 = st.beta_columns(3)
+    #d1,d2,d3 = st.beta_columns(3)
 
-    start = d1.date_input('project start date')
-    end = d2.date_input('project end date')
-    submit = d3.date_input('application received')
+    #start = d1.date_input('project start date')
+    #end = d2.date_input('project end date')
+    #submit = d3.date_input('application received')
     
-    if start > end:
-        st.write("IR: project starting after end date")
-        st.write(start.month+1)
-    if end > start:
-        st.write("Project Dates Approved")
-    if end.year >= (start.year+1):
-        st.write("PProject too long")
-    st.text("Check that the start date is acceptable (If between Nov 2 and Jan 31, Application Submission date must be before Feb 28, otherwise any date after Feb 1 is fine)")
+    #if start > end:
+    #    st.write("IR: project starting after end date")
+    #    st.write(start.month+1)
+    #if end > start:
+    #    st.write("Project Dates Approved")
+    #if end.year >= (start.year+1):
+    #    st.write("PProject too long")
+    #st.text("Check that the start date is acceptable (If between Nov 2 and Jan 31, Application Submission date must be before Feb 28, otherwise any date after Feb 1 is fine)")
 
     AC_TOTAL = 0 
 
