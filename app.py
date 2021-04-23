@@ -128,7 +128,7 @@ def app():
      
 
     cust = cust_num.text_input('application ac annual (kWh):', '0')
-    Panel = Panel_num.text_input('Panel Size (kW):', '1')
+    Panel = Panel_num.text_input('Panel Size (W):', '1')
 
 
     #Sif long:
